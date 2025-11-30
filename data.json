@@ -1,0 +1,1306 @@
+{
+    "fixed_schedule": [
+        {
+            "name": "Kuliah Web",
+            "day": "Senin",
+            "start_time": "08:00",
+            "end_time": "10:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah AI",
+            "day": "Selasa",
+            "start_time": "13:00",
+            "end_time": "17:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah Spai",
+            "day": "Rabu",
+            "start_time": "08:00",
+            "end_time": "10:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah Olahraga",
+            "day": "Rabu",
+            "start_time": "06:00",
+            "end_time": "08:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah Sistem Digital",
+            "day": "Kamis",
+            "start_time": "10:00",
+            "end_time": "12:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah DPBO",
+            "day": "Selasa",
+            "start_time": "10:00",
+            "end_time": "13:00",
+            "is_locked": true
+        },
+        {
+            "name": "Kuliah Landasan Pendidikan",
+            "day": "Jumat",
+            "start_time": "06:00",
+            "end_time": "08:00",
+            "is_locked": true
+        }
+    ],
+    "activities": [
+        {
+            "id": "Kerkom Web_1_1764488619",
+            "name": "Kerkom Web",
+            "duration": 3,
+            "priority": 3
+        },
+        {
+            "id": "Kerkom Web_2_1764488619",
+            "name": "Kerkom Web",
+            "duration": 3,
+            "priority": 3
+        },
+        {
+            "id": "Gym_1_1764488631",
+            "name": "Gym",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Gym_2_1764488631",
+            "name": "Gym",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Gym_3_1764488631",
+            "name": "Gym",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Gym_4_1764488631",
+            "name": "Gym",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Lari_1_1764488641",
+            "name": "Lari",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Lari_2_1764488641",
+            "name": "Lari",
+            "duration": 1,
+            "priority": 4
+        },
+        {
+            "id": "Latihan Futsal_1_1764488657",
+            "name": "Latihan Futsal",
+            "duration": 2,
+            "priority": 5
+        },
+        {
+            "id": "Latihan Futsal_2_1764488657",
+            "name": "Latihan Futsal",
+            "duration": 2,
+            "priority": 5
+        },
+        {
+            "id": "Freelance_1_1764488683",
+            "name": "Freelance",
+            "duration": 3,
+            "priority": 5
+        },
+        {
+            "id": "Freelance_2_1764488683",
+            "name": "Freelance",
+            "duration": 3,
+            "priority": 5
+        },
+        {
+            "id": "Belajar Struktur Data_1_1764489001",
+            "name": "Belajar Struktur Data",
+            "duration": 2,
+            "priority": 4
+        },
+        {
+            "id": "Belajar Machine Learning_1_1764489002",
+            "name": "Belajar Machine Learning",
+            "duration": 3,
+            "priority": 5
+        },
+        {
+            "id": "Ngoding Project Web_1_1764489003",
+            "name": "Ngoding Project Web",
+            "duration": 3,
+            "priority": 5
+        },
+        {
+            "id": "Ngoding Project Web_2_1764489003",
+            "name": "Ngoding Project Web",
+            "duration": 3,
+            "priority": 4
+        },
+        {
+            "id": "Review Materi Kuliah_1_1764489004",
+            "name": "Review Materi Kuliah",
+            "duration": 1,
+            "priority": 3
+        },
+        {
+            "id": "Bersih Bersih Kamar_1_1764489005",
+            "name": "Bersih Bersih Kamar",
+            "duration": 1,
+            "priority": 2
+        },
+        {
+            "id": "Meditasi_1_1764489006",
+            "name": "Meditasi",
+            "duration": 1,
+            "priority": 3
+        },
+        {
+            "id": "Membaca Buku_1_1764489007",
+            "name": "Membaca Buku",
+            "duration": 2,
+            "priority": 4
+        },
+        {
+            "id": "Belajar Ethical Hacking_1_1764489008",
+            "name": "Belajar Ethical Hacking",
+            "duration": 2,
+            "priority": 5
+        },
+        {
+            "id": "Research Web3_1_1764489009",
+            "name": "Research Web3",
+            "duration": 2,
+            "priority": 5
+        }
+    ],
+    "generated_schedule": {
+        "Senin": {
+            "4": {
+                "name": "Kuliah Web",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "5": {
+                "name": "Kuliah Web",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "6": {
+                "name": "Kuliah Web",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "7": {
+                "name": "Kuliah Web",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "9": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "10": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "11": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "12": {
+                "name": "Belajar Ethical Hacking",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "14": {
+                "name": "Belajar Ethical Hacking",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "15": {
+                "name": "Belajar Ethical Hacking",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "16": {
+                "name": "Research Web3",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "17": {
+                "name": "Research Web3",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "19": {
+                "name": "Research Web3",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "20": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "21": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "22": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "23": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "24": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "26": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "27": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "28": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "29": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "30": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "31": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "0": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "1": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "33": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "34": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "2": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "3": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "8": {
+                "name": "Latihan Futsal",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "13": {
+                "name": "Belajar Ethical Hacking",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "18": {
+                "name": "Research Web3",
+                "priority": 5,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "25": {
+                "name": "Freelance",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "32": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "35": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            }
+        },
+        "Selasa": {
+            "14": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "15": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "16": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "17": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "18": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "19": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "20": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "21": {
+                "name": "Kuliah AI",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "8": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "9": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "10": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "11": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "12": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "13": {
+                "name": "Kuliah DPBO",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "0": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "1": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "3": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "4": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "23": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "24": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "26": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "27": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "2": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "5": {
+                "name": "Belajar Machine Learning",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "22": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "25": {
+                "name": "Ngoding Project Web",
+                "priority": 5,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "6": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "7": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "28": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "29": {
+                "name": "Gym",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "30": {
+                "name": "Lari",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "31": {
+                "name": "Lari",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "32": {
+                "name": "Lari",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "33": {
+                "name": "Lari",
+                "priority": 4,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "34": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "35": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            }
+        },
+        "Rabu": {
+            "4": {
+                "name": "Kuliah Spai",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "5": {
+                "name": "Kuliah Spai",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "6": {
+                "name": "Kuliah Spai",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "7": {
+                "name": "Kuliah Spai",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "0": {
+                "name": "Kuliah Olahraga",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "1": {
+                "name": "Kuliah Olahraga",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "2": {
+                "name": "Kuliah Olahraga",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "3": {
+                "name": "Kuliah Olahraga",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "9": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "10": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "11": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "12": {
+                "name": "Membaca Buku",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "13": {
+                "name": "Membaca Buku",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "14": {
+                "name": "Membaca Buku",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "16": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "17": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "18": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "19": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "20": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "21": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "8": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "15": {
+                "name": "Membaca Buku",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "22": {
+                "name": "Meditasi",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "23": {
+                "name": "Meditasi",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "24": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "25": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "26": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "27": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "28": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "29": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "30": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "31": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "32": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "33": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "34": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "35": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            }
+        },
+        "Kamis": {
+            "8": {
+                "name": "Kuliah Sistem Digital",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "9": {
+                "name": "Kuliah Sistem Digital",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "10": {
+                "name": "Kuliah Sistem Digital",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "11": {
+                "name": "Kuliah Sistem Digital",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "0": {
+                "name": "Bersih Bersih Kamar",
+                "priority": 2,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "1": {
+                "name": "Bersih Bersih Kamar",
+                "priority": 2,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "2": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "3": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "4": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "5": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "12": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": true
+            },
+            "13": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "14": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "15": {
+                "name": "Belajar Struktur Data",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "16": {
+                "name": "Meditasi",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "17": {
+                "name": "Meditasi",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "18": {
+                "name": "Membaca Buku",
+                "priority": 4,
+                "duration_slots": 4,
+                "category": null,
+                "is_first_slot": false
+            },
+            "19": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "6": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "7": {
+                "name": "Review Materi Kuliah",
+                "priority": 3,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            },
+            "20": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "21": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "22": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "23": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "24": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "26": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "27": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "28": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "29": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "30": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "31": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "33": {
+                "name": "Bersih Bersih Kamar",
+                "priority": 2,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": true
+            },
+            "34": {
+                "name": "Bersih Bersih Kamar",
+                "priority": 2,
+                "duration_slots": 2,
+                "category": null,
+                "is_first_slot": false
+            }
+        },
+        "Jumat": {
+            "0": {
+                "name": "Kuliah Landasan Pendidikan",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": true
+            },
+            "1": {
+                "name": "Kuliah Landasan Pendidikan",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "2": {
+                "name": "Kuliah Landasan Pendidikan",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "3": {
+                "name": "Kuliah Landasan Pendidikan",
+                "is_fixed": true,
+                "category": null,
+                "is_first_slot": false
+            },
+            "4": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "5": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "6": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "7": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "8": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "9": {
+                "name": "Ngoding Project Web",
+                "priority": 4,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "10": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "11": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "12": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "13": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "14": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "15": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "16": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": true
+            },
+            "17": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "18": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "19": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "20": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            },
+            "21": {
+                "name": "Kerkom Web",
+                "priority": 3,
+                "duration_slots": 6,
+                "category": null,
+                "is_first_slot": false
+            }
+        }
+    }
+}

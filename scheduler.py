@@ -5,7 +5,7 @@ from rich.panel import Panel
 from rich.prompt import Prompt, IntPrompt
 from rich.spinner import Spinner
 from rich.table import Table
-from rich.text import Text
+from rich.text import Text # Pastikan ini diimport
 import pyfiglet
 
 # Import dari file lokal
@@ -66,7 +66,6 @@ def show_welcome_screen():
     info_text.append("Sistem ini akan membantu Anda: ", style="bold")
     info_text.append("\n  ✅ Mengatur jadwal kuliah dan aktivitas (Fixed Schedule)")
     info_text.append("\n  🧠 Menyelesaikan penjadwalan menggunakan AI (CSP Backtracking)")
-    info_text.append("\n  📊 Menganalisis Work-Life Balance Score Anda")
     info_text.append("\n\n")
     info_text.append("Siapkan Jadwal Fixed Anda dan Aktivitas yang Ingin Dicapai!", style="italic magenta")
     
@@ -101,7 +100,9 @@ def show_welcome_screen():
 
 def show_spinner(text="Sedang memproses..."):
     """Menampilkan spinner Rich untuk animasi loading."""
-    with console.status(f"[bold cyan]{text}[/cyan]", spinner="dots", speed=1.5):
+    # FIX: Gunakan objek Text secara eksplisit untuk mengatasi MarkupError
+    status_text = Text(text, style="bold cyan")
+    with console.status(status_text, spinner="dots", speed=1.5):
         time.sleep(1.5) # Durasi minimum untuk animasi
 
 def clear_screen():
@@ -330,76 +331,6 @@ def display_calendar(schedule: Dict):
         table.add_row(*row_content)
 
     console.print(table)
-    display_stats(total_hours_per_activity, total_slots_filled)
-
-def calculate_work_life_score(total_hours_per_activity: Dict[str, float]) -> float:
-    """Menghitung Work-Life Balance Score (skor 0-100)."""
-    
-    # Asumsi Kategori
-    # Work/Produktif: Kerkom, Kuliah (Fixed)
-    # Life/Non-Produktif: Olahraga, Aktivitas Lain
-    
-    work_hours = sum(hours for name, hours in total_hours_per_activity.items() if 'kuliah' in name.lower() or 'kerkom' in name.lower() or 'belajar' in name.lower())
-    life_hours = sum(hours for name, hours in total_hours_per_activity.items() if 'olahraga' in name.lower() or 'lain' in name.lower())
-
-    total_scheduled_hours = work_hours + life_hours
-    
-    if total_scheduled_hours == 0:
-        return 0.0
-        
-    # Rasio Ideal 60% Work, 40% Life (atau 1.5:1)
-    # Skor 100 jika rasio Work/Life mendekati 1.5.
-    
-    if work_hours == 0 or life_hours == 0:
-        # Jika salah satu 0, skor sangat rendah
-        score = 20.0 * (work_hours > 0) * (life_hours > 0)
-    else:
-        # Semakin mendekati 1.5, semakin baik
-        ratio = work_hours / life_hours
-        distance_from_ideal = abs(ratio - 1.5)
-        
-        # Normalisasi ke skor 0-100
-        # Batasi agar jarak 1.5 tetap mendapat skor tinggi
-        score = max(0, 100 - (distance_from_ideal * 30))
-        
-    return min(100.0, max(0.0, score))
-
-
-def display_stats(total_hours_per_activity: Dict[str, float], total_slots_filled: int):
-    """Menampilkan statistik dan Work-Life Balance Score."""
-    
-    console.rule("[bold cyan] 📊 STATISTIK JADWAL & WORK-LIFE BALANCE [/bold cyan]")
-    
-    # Statistik Total Jam per Aktivitas
-    stat_table = Table(show_header=True, header_style="bold magenta")
-    stat_table.add_column("Aktivitas")
-    stat_table.add_column("Total Jam", justify="right")
-    
-    for name, hours in sorted(total_hours_per_activity.items(), key=lambda item: item[1], reverse=True):
-        stat_table.add_row(name, f"{hours:.1f} jam")
-        
-    console.print(stat_table)
-    
-    # Work-Life Balance Score
-    score = calculate_work_life_score(total_hours_per_activity)
-    score_text = f"[bold white on blue] {score:.1f} / 100 [/bold white on blue]"
-    
-    # Saran berdasarkan skor
-    if score >= 80:
-        advice = "[green]Balance score SANGAT BAIK! Jadwal Anda efisien dan seimbang.[/green]"
-    elif score >= 50:
-        advice = "[yellow]Balance score CUKUP. Pertimbangkan menambah waktu rekreasi atau mengurangi beban kerja.[/yellow]"
-    else:
-        advice = "[red]Balance score RENDAH. Anda mungkin terlalu fokus pada Work atau Life. Coba longgarkan constraints![/red]"
-        
-    console.print(Panel(
-        f"[bold]WORK-LIFE BALANCE SCORE:[/bold] {score_text}\n\n{advice}",
-        title="HASIL ANALISIS",
-        border_style="cyan"
-    ))
-    
-    console.print(f"\n[dim]Total Slot Terisi: {total_slots_filled * SLOT_DURATION / 60:.1f} jam dari {len(DAYS) * 18} jam potensial.[/dim]")
-
 # --- Fungsi Penjadwalan & Edit Manual ---
 
 def generate_schedule(data: Dict):
@@ -476,10 +407,10 @@ def edit_manual_schedule(data: Dict):
         else:
              console.print("[bold red]❌ Tidak bisa menghapus jadwal fixed (kuliah) dari sini.[/bold red]")
     elif action == 'ganti_nama':
-         new_name = Prompt.ask("Nama Aktivitas Baru", default=slot_data['name'])
-         slot_data['name'] = new_name
-         console.print("[bold green]✅ Nama aktivitas berhasil diubah.[/bold green]")
-         
+          new_name = Prompt.ask("Nama Aktivitas Baru", default=slot_data['name'])
+          slot_data['name'] = new_name
+          console.print("[bold green]✅ Nama aktivitas berhasil diubah.[/bold green]")
+          
     data_manager.save_data(data)
     Prompt.ask("Tekan [bold]ENTER[/bold] untuk melanjutkan...")
 
@@ -487,7 +418,68 @@ def edit_manual_schedule(data: Dict):
 
 def main_menu():
     """Tampilan Menu Utama."""
-    show_welcome_screen()
+    # show_welcome_screen() # Ini menyebabkan error, kita akan pindahkan ke sini
+    
+    # Menampilkan welcome screen (dibiarkan di sini agar lebih mudah debugging)
+    console.clear() 
+    
+    # --- 1. Teks ASCII Besar ---
+    try:
+        ascii_text = pyfiglet.figlet_format("SCHEDULE.AI", font="slant")
+        console.print(f"[bold magenta]{ascii_text}[/bold magenta]", justify="center")
+    except Exception:
+        console.print(Text("SCHEDULE.AI", justify="center", style="bold huge red"))
+        
+    # 2. Judul Utama dalam Panel Besar
+    welcome_panel = Panel(
+        Text("🚀 SCHEDULER MAHASISWA 🚀", justify="center", style="bold white on #4CAF50"), 
+        title="[bold yellow]✨ Selamat Datang di Schedule.ai[/bold yellow]",
+        subtitle="[dim]CLI Scheduling Assistant untuk Work-Life Balance Anda[/dim]",
+        border_style="cyan",
+        width=80
+    )
+    console.print(welcome_panel, justify="center")
+    
+    console.print("\n" * 1) 
+    
+    # 3. Kotak Informasi Singkat
+    info_text = Text()
+    info_text.append("Sistem ini akan membantu Anda: ", style="bold")
+    info_text.append("\n  ✅ Mengatur jadwal kuliah dan aktivitas (Fixed Schedule)")
+    info_text.append("\n  🧠 Menyelesaikan penjadwalan menggunakan AI (CSP Backtracking)")
+    info_text.append("\n\n")
+    info_text.append("Siapkan Jadwal Fixed Anda dan Aktivitas yang Ingin Dicapai!", style="italic magenta")
+    
+    info_panel = Panel(
+        info_text,
+        title="[bold blue]📝 Bagaimana Ini Bekerja?[/bold blue]",
+        border_style="blue",
+        padding=(1, 4),
+        width=80
+    )
+    console.print(info_panel, justify="center")
+
+    # 4. Footer Animasi Ringan
+    console.print("\n" * 1)
+    console.print("[dim]Menginisialisasi modul...[/dim]")
+    
+    # Animasi Spinner Singkat
+    with console.status(
+        "[bold green]Memuat Data dari data.json...[/bold green]", 
+        spinner="earth", 
+        speed=1.5
+    ) as status:
+        time.sleep(1) 
+        status.update("[bold yellow]Inisialisasi CSP Engine...[/bold yellow]")
+        time.sleep(0.5)
+        status.update("[bold cyan]Semua Sistem Siap! 🎯[/bold cyan]")
+        time.sleep(0.5)
+
+    console.print("\n[bold]Tekan [yellow]ENTER[/yellow] untuk menuju Menu Utama...[/bold]")
+    Prompt.ask("") 
+    clear_screen()
+    # Akhir welcome screen
+    
     # Asumsi data_manager.load_data() mengembalikan struktur data yang diperlukan
     data = data_manager.load_data() 
     
